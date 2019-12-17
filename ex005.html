@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+        let salario = Number(prompt('Digite seu salário: '))
+        let salario_minimo = Number(prompt('Qual valor do salário minimo? '))
+        let num = Number()
+        if(salario / salario_minimo === 1){
+            num++
+            alert(`Você recebe ${num} salário minimo`)
+        }
+        else if(salario_minimo > 1){
+            do{
+                    let total = parseInt(salario / salario_minimo)
+                    parseInt(num += total)
+                    alert(`Você recebe ${num} salários minimos`)
+                }while(salario <= salario_minimo)
+        }
+        else{
+            alert('Erro tente novamente.')
+        }
+    </script>
+</body>
+</html>

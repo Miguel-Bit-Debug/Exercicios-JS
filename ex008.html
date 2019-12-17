@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <script>
+    function numero(){
+        let acumulador = 0
+        for(num = 1; num <= 2; num++){
+            let n = Number(prompt(`Digite o ${num} número: `))
+            acumulador += n
+        }
+            if(acumulador > 10){
+                alert(`O número ${acumulador} é maior que Dez.`)
+            } else if(acumulador < 10){
+                alert(`Só mostro números maiores que Dez.`)
+            } else{
+                alert('Erro')
+            }
+        }
+    numero()
+    </script>
+</body>
+</html>
