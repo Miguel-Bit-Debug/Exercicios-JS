@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function comis(){
+            var carros = Number(prompt('Quantos carros você vendeu? '))
+            var valor_de_carros_vendidos = Number(0)
+            for(carro = 1; carro <= carros; carro++){
+                var preco = Number(prompt(`Qual valor do ${carro} carro? `))
+                valor_de_carros_vendidos += preco
+            }
+            var comissao = Number(prompt('Qual valor da comissão: '))
+            var salario = Number(prompt('Qual valor do seu salário: '))
+            var valor_de_vendas = valor_de_carros_vendidos *  5 / 100
+            alert(`O total de carros vendidos:   ${carros}\nValor de vendas:   ${valor_de_carros_vendidos}\nSalário:  ${salario}\nSalario + Comissão + 5%:   ${salario + (comissao * (comissao + comissao) / 100) + valor_de_vendas}\n`)
+        }
+
+        comis()
+        
+
+    </script>
+</body>
+</html>

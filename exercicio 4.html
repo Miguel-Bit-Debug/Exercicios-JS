@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var nota1 = Number(prompt('Digite a primeira nota: '))
+            var nota2 = Number(prompt('Digite a segunda nota: '))
+            while(nota1 < 0 || nota1 > 10){
+                var nota1 = Number(prompt('Digite a primeira nota: '))
+            }
+            while(nota2 < 0 || nota2 > 10){
+                var nota2 = Number(prompt('Digite a segunda nota: '))
+            }
+                document.write((nota1 + nota2) / 2) 
+    </script>
+</body>
+</html>
